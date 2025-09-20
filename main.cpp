@@ -1,22 +1,22 @@
 #include<iostream>
+#include"libr/CoordinateGeometry.h"
 using namespace std;
 
-#include"libr/CoordinateGeometry.h"
-
 int main() {
+    // Coordinating2D Operations
     double x1, y1, z1, x2, y2, z2;
     cout << "Enter coordinates of point A: ";
-    cin >> x1 >> y1 >> z1;
+    cin >> x1 >> y1;
     cout << "Enter coordinates of point B: ";
-    cin >> x2 >> y2 >> z2;
+    cin >> x2 >> y2;
+
     Coordinate2D p(x1, y1, x2, y2);
     p.display();
-    p.distance(x1, y1, x2, y2);
+    cout<<endl;
     
+    p.distance();
     cout<<endl;
+    
+    p.midpoint();
     cout<<endl;
-
-    Coordinate3D p2(x1, y1, z1, x2, y2, z2);
-    p2.display();
-    p2.distance(x1, y1, z1, x2, y2, z2);
 }
