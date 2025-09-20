@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-#include"CoordinateGeometry.h"
+#include"libr/CoordinateGeometry.h"
 
 int main() {
     double x1, y1, z1, x2, y2, z2;
